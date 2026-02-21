@@ -22,10 +22,4 @@ A production-ready real-time private messaging app built with **Java 17**, **Spr
 
 ---
 
-## 🔒 Key Technical Highlights
 
-- **WebSocket + STOMP** for real-time bidirectional communication
-- **JWT stateless auth** — token passed in WebSocket headers
-- **User-specific queues** — private messages delivered only to the recipient
-- **Typing indicators** — debounced, auto-cancel after 2 seconds
-- **Read receipts** — messages marked as READ when conversation is opened
