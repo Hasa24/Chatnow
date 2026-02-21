@@ -1,0 +1,39 @@
+package com.chat.entity;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+import java.time.LocalDateTime;
+
+@Entity
+@Table(name = "messages")
+@Getter @Setter @Builder
+@NoArgsConstructor @AllArgsConstructor
+public class Message {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "sender_id", nullable = false)
+    private User sender;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "receiver_id", nullable = false)
+    private User receiver;
+
+    @Column(nullable = false, columnDefinition = "TEXT")
+    private String content;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private MessageStatus status;
+
+    @Column(nullable = false)
+    private LocalDateTime sentAt;
+
+    private LocalDateTime readAt;
+
+    public enum MessageStatus { SENT, DELIVERED, READ }
+}
