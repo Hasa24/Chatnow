@@ -1,45 +1,6 @@
 # 💬 ChatNow — Real-Time Private Chat
 
-A production-ready real-time private messaging app built with **Java 17**, **Spring Boot 3**, **WebSocket (STOMP)**, **PostgreSQL**, and **JWT Authentication**.
-
----
-
-## 🚀 Quick Start
-
-```bash
-git clone https://github.com/YOUR_USERNAME/chatnow
-cd chatnow
-docker-compose up --build
-```
-
-Open: **http://localhost:8081**
-
----
-
-## 🛠 Tech Stack
-
-| Layer | Technology |
-|---|---|
-| Framework | Spring Boot 3.2 |
-| Real-time | WebSocket + STOMP |
-| Security | Spring Security + JWT |
-| Database | PostgreSQL + Spring Data JPA |
-| Frontend | HTML/CSS/JS (served by Spring Boot) |
-| Container | Docker + Docker Compose |
-
----
-
-## ✨ Features
-
-- 🔐 JWT Authentication (register/login)
-- 💬 Real-time private messaging via WebSocket
-- ✓✓ Read receipts
-- ⌨️ Typing indicators
-- 🟢 Online/Offline status
-- 🔍 User search
-- 📱 Clean modern UI
-
----
+A production-ready real-time private messaging app built with **Java 17**, **Spring Boot 3**, **WebSocket (STOMP)**, and **JWT Authentication
 
 ## 📡 API Endpoints
 
